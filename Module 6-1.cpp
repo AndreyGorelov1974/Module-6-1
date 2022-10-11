@@ -19,10 +19,13 @@
 
 int main()
 {
-    std::cout << "Введите сколько сейчас часов:\n";
-    int currentHour;
-    std::cin >> currentHour;
-    if (currentHour < 1 || currentHour > 12)  std::cout << "Показания часов не могут быть меньше 1 или больше 12.\n" else {
-
-    };
+	std::cout << "Введите сколько сейчас часов:\n";
+	int currentHour;
+	std::cin >> currentHour;
+	if (currentHour < 1 || currentHour > 12)  std::cout << "Показания часов не могут быть меньше 1 или больше 12.\n" else {
+		while (currentHour != 0) {
+			std::cout << "«Ку - ку!»\n";
+			--currentHour;
+		}
+	};
 }
